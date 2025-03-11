@@ -5,8 +5,8 @@ import streamlit as st
 @st.cache_data  # Μπορεί να αφαιρεθεί αν προκαλεί πρόβλημα
 def load_data():
     try:
-        path_vineyard = "ΦΥΣΙΚΟΧΗΜΙΚΑ_ΖΙΖΑΝΙΟΚΤΌΝΑ_ΑΜΠΕΛΙ.xlsx"
-        path_peach = "ΦΥΣΙΚΟΧΗΜΙΚΑ_ΖΙΖΑΝΙΟΚΤΌΝΑ_ΡΟΔΑΚΙΝΑ.xlsx"
+        path_vineyard = "ΦΥΣΙΚΟΧΗΜΙΚΑ_ΖΙΖΑΝΙΟΚΤΟΝΑ_ΑΜΠΕΛΙ.xlsx"
+        path_peach = "ΦΥΣΙΚΟΧΗΜΙΚΑ_ΖΙΖΑΝΙΟΚΤΟΝΑ_ΡΟΔΑΚΙΝΑ.xlsx"
         df_vineyard = pd.read_excel(path_vineyard)
         df_peach = pd.read_excel(path_peach)
         return df_vineyard, df_peach
